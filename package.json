@@ -1,0 +1,21 @@
+{
+  "name": "uiforum",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/data-grid": "^4.0.0-alpha.22",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/x-grid-data-generator": "^4.0.0-alpha.22",
+    "clsx": "latest",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
