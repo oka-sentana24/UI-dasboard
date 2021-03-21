@@ -29,7 +29,6 @@ export default function Dasboard(){
     const bull = <span className={classes.bullet}>•</span>;
     return(
         <Layout>
-            <Toolbar />
             <Card className={classes.root}>
                 <CardContent>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>

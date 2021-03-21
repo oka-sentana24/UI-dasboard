@@ -20,6 +20,8 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 import PersonIcon from '@material-ui/icons/Person';
 import AssessmentIcon from '@material-ui/icons/Assessment';
+import Avatar from '@material-ui/core/Avatar';
+import NavigateNext from '@material-ui/icons/NavigateNext';
 
 
 const drawerWidth = 240;
@@ -37,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     drawerContainer: {
       overflow: 'auto',
     },
+    large: {
+        width: theme.spacing(7),
+        height: theme.spacing(7),
+      },
   }));
 export default function Sidebar(){
     const classes = useStyles();
@@ -46,15 +52,7 @@ export default function Sidebar(){
     };
 
     return(
-    <List
-        component="nav"
-        aria-labelledby="nested-list-subheader"
-        subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-            Nested List Items
-            </ListSubheader>
-        }
-    >
+    <List>
         <Link href="/dasboard">
             <ListItem button>
                 <ListItemIcon>
@@ -67,10 +65,9 @@ export default function Sidebar(){
         {/* <Link href="#"> */}
         <ListItem button onClick={handleClick}>
             <ListItemIcon>
-            <DataUsageIcon />
+                {open ? <ExpandMore /> : <NavigateNext/> }
             </ListItemIcon>
             <ListItemText primary="Master Data" />
-            {open ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
