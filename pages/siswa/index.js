@@ -1,15 +1,12 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import Layout from '../Layout/layout';
-import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core'
 import FilterListIcon from '@material-ui/icons/FilterList';
 import AddIcon from '@material-ui/icons/Add';
-import Breadcrumb from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -62,15 +59,6 @@ export default function Siswa() {
   const classes = useStyles();
   return (
     <Layout>
-        <Breadcrumb aria-label="breadcrumb">
-          <Link color="inherit" href="/" onClick={handleClick}>
-            Material-UI
-          </Link>
-          <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-            Core
-          </Link>
-          <Typography color="textPrimary">Breadcrumb</Typography>
-        </Breadcrumb>
         <Grid item xs={12}>
             <div className={classes.new}>
               <Button
