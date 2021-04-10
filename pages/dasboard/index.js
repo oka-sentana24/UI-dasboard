@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from "../Layout/layout"
+import Layout from "../../components/layout/layout";
 import Toolbar from "@material-ui/core/Toolbar";
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';

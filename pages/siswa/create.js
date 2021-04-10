@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import Layout from "../Layout/layout";
+import Layout from "../../components/layout/layout";
 import Button  from '@material-ui/core/Button';
 import ListItem from '@material-ui/core/ListItem';
 import Breadcrumb from '@material-ui/core/Breadcrumbs';
@@ -36,7 +36,7 @@ export default function BasicTextFields() {
         </Link>
       </Breadcrumb>
       <Card>
-        <form className={classes.root} noValidate autoComplete="off">
+        <form className={classes.root} noValidate autoComplete="off" method="POST">
           <Grid item xs={12} style={{display:"flex"}}>
             <Grid item xs={6}>
               <ListItem>

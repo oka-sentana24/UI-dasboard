@@ -12,10 +12,21 @@
     "@material-ui/data-grid": "^4.0.0-alpha.22",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/x-grid-data-generator": "^4.0.0-alpha.22",
+    "@prisma/client": "^2.19.0",
+    "bcryptjs": "^2.4.3",
     "clsx": "latest",
-    "next": "latest",
+    "fontsource-roboto": "^4.0.0",
+    "init": "^0.1.2",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "material-ui-popup-state": "^1.8.0",
+    "next": "^10.0.9",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.19.0",
+    "prisma": "^2.19.0"
   }
 }

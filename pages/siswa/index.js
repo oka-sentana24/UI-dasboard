@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
-import Layout from '../Layout/layout';
+import Layout from '../../components/layout/layout';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core'
@@ -86,6 +86,7 @@ export default function Siswa() {
       <div style={{ height: 400, width: '100%' }}>
         <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
       </div>
+      <h1>CANDRA</h1>
     </Layout>
   );
 }
